@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.clock-face{
+    height: 500px;
+    width: 500px;
+    background-color: #0C1844;
+    border-radius: 50%;
+    border: 10px solid white;
+    position: relative;
+}
+
+.hour{
+    width: 10px;
+    height: 150px;
+    background-color: #FF6969;
+    border-radius: 10px;
+    position: absolute;
+    left: 245px;
+    top: 95px;
+    transform-origin: bottom;
+    transform: rotate( deg); /*youtube */
+}
+
+ .minute{
+    width: 10px;
+    height: 220px;
+    background-color: #C80036;
+    border-radius: 10px;
+    position: absolute;
+    left: 245px;
+    top: 25px;
+    transform-origin: bottom;
+    transform: rotate(deg); /*(min*6)*/
+    }
+
+.sec{
+    width: 1px;
+    height: 200px;
+    border-radius: 10px;
+    background-color:#FFF5E1;
+    position: absolute;
+    left: 250px;
+    top: 45px;
+    transform-origin: bottom;
+    transform: rotate(deg); /*youtube (sec*6) */
+}
+
+.cen{
+    height: 30px;
+    width: 30px;
+    border: 5px solid white;
+    position: absolute;
+    left: 230px;
+    top: 230px;
+    border-radius: 50%;
+    background-color: black;
+} 
+
+h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    
+}
+
+.name{
+    position: absolute;
+    left: 190px;
+    bottom: 550px;
+}
